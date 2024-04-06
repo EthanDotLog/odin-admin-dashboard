@@ -5,9 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <title>Proejct Name</title>
+  <script src="https://kit.fontawesome.com/94a562af7b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
-  <script src="./script.js"></script>
+  <header>
+    <div class="top-header">
+      <form>
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" placeholder="Search..." />
+      </form>
+      <i class="fa-solid fa-bell"></i>
+      <div class="active-user header-user">
+      </div>
+      <h3>User Name</h3>
+    </div>
+    <div class="bottom-header">
+      <div id="page-title">
+        <div class="active-user title-user"></div>
+        <div>
+          <p>Hi there,</p>
+          <p>User Name (@user_name)</p>
+        </div>
+        <div>
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="sidebar">
+    <h2><i class="fa-solid fa-laptop-code"></i>Dashboard</h2>
+    <ul>
+      <li><a href="#"><i class="fa-solid fa-terminal"></i>Home</a></li>
+      <li><a href="#"><i class="fa-solid fa-user-secret"></i> Profile</a></li>
+      <li><a href="#"><i class="fa-solid fa-code-commit"></i> Messages</a></li>
+      <li><a href="#"><i class="fa-solid fa-code-fork"></i> History</a></li>
+      <li><a href="#"><i class="fa-solid fa-circle-nodes"></i> Tasks</a></li>
+      <li><a href="#"><i class="fa-solid fa-sitemap"></i> Communities</a></li>
+      <li class="spacer"></li>
+      <li><a href="#"><i class="fa-solid fa-gears"></i> Settings</a></li>
+      <li><a href="#"><i class="fa-solid fa-fire-extinguisher"></i> Support</a></li>
+      <li><a href="#"><i class="fa-solid fa-shield"></i> Privacy</a></li>
+    </ul>
+  </div>
+  <main>
+    <div class="projects">
+      <!-- Project cards go here -->
+    </div>
+    <div class="announcements">
+      <!-- Announcement cards go here -->
+    </div>
+    <div class="trending">
+      <!-- Trending cards go here -->
+    </div>
+  </main>
+
+
+  <script src="./script.js" type="module"></script>
 </body>
 </html>

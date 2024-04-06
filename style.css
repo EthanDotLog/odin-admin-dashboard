@@ -3,3 +3,50 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+  grid-template-areas:
+    "sidebar header header header header"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main";
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  grid-template-areas:
+    "projects projects projects announcements"
+    "projects projects projects announcements"
+    "projects projects projects trending"
+    "projects projects projects trending";
+  gap: 1rem;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.announcements {
+  grid-area: announcements;
+}
+
+.trending {
+  grid-area: trending;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
