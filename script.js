@@ -30,7 +30,7 @@ announcements.forEach((announcement) => {
 trendings.forEach((trend) => {
   const card = document.createElement("div");
   card.classList.add("trending-card");
-  card.innerHTML = `<img src="${trend.pfp}"/>
+  card.innerHTML = `<img class="active-user" src="${trend.pfp}"/>
   <div>
     <h3>${trend.name}</h3>
     <p>${trend.description}</p>
