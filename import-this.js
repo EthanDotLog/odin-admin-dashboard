@@ -62,6 +62,11 @@ const trendings = [
     name: "@sorequest",
     description: "fetch requester",
   },
+  {
+    pfp: "https://robohash.org/dsfafaf",
+    name: "@somuchwait",
+    description: "waiter",
+  },
   
 ];
 
